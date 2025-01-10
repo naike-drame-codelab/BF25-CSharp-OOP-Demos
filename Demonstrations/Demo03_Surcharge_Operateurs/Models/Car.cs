@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo02_Indexeurs.Models
+namespace Demo03_Surcharge_Operateurs.Models
 {
     class Car
     {
@@ -85,6 +85,23 @@ namespace Demo02_Indexeurs.Models
             return $"Marque : {_Brand}, Modèle : {Model}, Année : {Year}, Consommation : {_Consumption} L/100km.";
         }
 
+        #endregion
+
+        #region Surcharge d'opérateurs
+
+        // doit inclure un public et un static
+        public static Car operator +(Car c1, Car c2)
+        {
+            Car newCar = new Car()
+            {
+                Brand = c2.Brand,
+                Model = c1.Model,
+                Year = c2.Year,
+                Consumption = (c1.Consumption + c2.Consumption) / 2  // Moyenne de consommation
+            };
+
+            return newCar;
+        } 
         #endregion
     }
 }
