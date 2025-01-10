@@ -8,5 +8,5 @@ Car c = new Car();
 // par défaut, les élément d'une class ont un niveau d'accès private
 // c.Test
 
-// accès à une propriété d'une class et 
+// accès à une propriété d'une class
 c.Color = "Red";
