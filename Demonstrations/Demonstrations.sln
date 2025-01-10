@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo01_ClassProp", "Demo01_ClassProp\Demo01_ClassProp.csproj", "{37261B06-F964-421B-AE54-99B8A40CDDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo02_Indexeurs", "Demo02_Indexeurs\Demo02_Indexeurs.csproj", "{84E75208-1950-45CE-8A1E-1252AD0A7435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{37261B06-F964-421B-AE54-99B8A40CDDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37261B06-F964-421B-AE54-99B8A40CDDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37261B06-F964-421B-AE54-99B8A40CDDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E75208-1950-45CE-8A1E-1252AD0A7435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E75208-1950-45CE-8A1E-1252AD0A7435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E75208-1950-45CE-8A1E-1252AD0A7435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E75208-1950-45CE-8A1E-1252AD0A7435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
