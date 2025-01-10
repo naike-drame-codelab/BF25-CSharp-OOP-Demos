@@ -15,8 +15,82 @@ namespace Demo01_ClassProp.Models
 
     class Car
     {
+        #region Demo attributs & propriétés
         int Test { get; set; }
 
-        public string Color { get; set; }
+        // attribut privé de la class
+        private string _Color;
+
+        // propriété dudit attribut définissant les accès en dehors de la class
+        public string Color
+        {
+            // Accesseur (get) : si seul, writeonly
+            get
+            {
+                return _Color;
+            }
+            // Accesseur (set) : si seul, readonly
+            set
+            {
+                _Color = value;
+            }
+            // générer une propriété auto : prop + TAB
+            // générer une propriété auto complète : propfull + TAB
+        }
+        #endregion
+
+        #region Attributs / variable Membres
+        // variables membres
+        private string _Brand;
+        private double _Consumption; // Litres
+
+        // attributs avec propriétés auto
+        public string Model { get; set; }
+        public int Year { get; set; }
+
+        #endregion
+
+        #region Propriétés
+        public string Brand
+        {
+            get { return _Brand; }
+            set { _Brand = value; }
+        }
+
+        public double Consumption
+        {
+            get
+            {
+                return _Consumption;
+            }
+            set
+            {
+                // validation : la consommation doit être positive
+                if (value > 0)
+                {
+                    _Consumption = value;
+                }
+                else
+                {
+                    Console.WriteLine("La consommation doit être positive.");
+                }
+            }
+        }
+
+        #endregion
+
+        #region Méthodes
+        // calcul du coût du carburant sur une distance donnée
+        public double GetFuelCost(double distance, double fuelPrice)
+        {
+            return (distance * _Consumption / 100) * fuelPrice;
+        }
+
+        public string GetCarInfo()
+        {
+            return $"Marque : {_Brand}, Modèle : {Model}, Année : {Year}, Consommation : {_Consumption} L/100km.";
+        }
+
+        #endregion
     }
 }
