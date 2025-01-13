@@ -43,3 +43,20 @@ for (int i = 1; i <= 3; i++)
 Console.WriteLine($"Coût du carburant pour {distance} km : {price} Euros.");
 
 Console.WriteLine(combinedCar[0] = "Toto");
+
+
+// Fraction f
+Fraction f1 = new()
+{
+    Numerator = 2,
+    Denominator = 3
+};
+
+Fraction f2 = new()
+{
+    Numerator = 4,
+    Denominator = 5
+};
+
+Fraction result = f1 + f2;
+Console.WriteLine(result);  //ne va pas fonctionner sans surcharger l'operateur +
