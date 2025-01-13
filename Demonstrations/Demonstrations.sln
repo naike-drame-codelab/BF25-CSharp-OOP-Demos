@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo02_Indexeurs", "Demo02_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03_Surcharge_Operateurs", "Demo03_Surcharge_Operateurs\Demo03_Surcharge_Operateurs.csproj", "{90F3C6FE-9AD6-46D9-A10C-7C540EE5673A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04_Heritage", "Demo04_Heritage\Demo04_Heritage.csproj", "{221565CA-2209-4B44-B77A-7B9A8F34679C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{90F3C6FE-9AD6-46D9-A10C-7C540EE5673A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F3C6FE-9AD6-46D9-A10C-7C540EE5673A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F3C6FE-9AD6-46D9-A10C-7C540EE5673A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221565CA-2209-4B44-B77A-7B9A8F34679C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221565CA-2209-4B44-B77A-7B9A8F34679C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221565CA-2209-4B44-B77A-7B9A8F34679C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221565CA-2209-4B44-B77A-7B9A8F34679C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
