@@ -12,9 +12,11 @@ monique.FaireUneCommande();
 // une interface permet de faciliter le découplage --> on se concentre plus sur le comportement que sur la nature
 // interface = rendre l'application modulable via des dépendances faibles
 // !!! règles à respecter (même si possible depuis le .Net 8) : 
-    // - pas de variables membres
-    // - pas de public devant
-// 
+// - pas de variables membres
+// - pas de public devant
+// interface = façade qui fait le pont entre 2 class 
+// API (Application Program Interface)  : façade entre 2 programmes
+// interface utilisateur : façade entre un humain et l'ordinateur
 interface ITelephone
 {
     // on peut avoir des const, mais en général on place les variables const dans une class static (cf. Math())
