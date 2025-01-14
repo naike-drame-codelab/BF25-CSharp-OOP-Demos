@@ -7,7 +7,7 @@ Cercle cercle = new Cercle() { Rayon = 2 };
 Console.WriteLine(c.CalculerAire()); // 2.25
 Console.WriteLine(cercle.CalculerAire()); // 12.56
 
-// création d'une class abstraite
+// création d'une class abstraite qu'on ne peut plus directement instancier
 abstract class Forme
 {
     public string Color { get; set; }
