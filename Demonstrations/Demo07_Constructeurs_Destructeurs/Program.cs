@@ -4,12 +4,12 @@ Chat c2 = new("Garfield");
 Console.WriteLine(c.Nom);  // Felix
 Console.WriteLine(c2.Nom); // Garfield
 
-// je libère les ressources utilisées : utilisation du using
 // c3.Dispose();
+// je libère les ressources utilisées : utilisation du using
 using (Chat c3 = new Chat())
 {
     Console.WriteLine(c.Nom);
-}
+} // la methode dispose de c3 sera appelée à la fin de l'accolade
 
 #region Utilisation du _
 //List<int> l = new List<int>() { 1, 2, 3, 4 };
@@ -61,8 +61,8 @@ class Chat : Animal, IDisposable
     #region ~Destructeur de la class
     ~Chat()
     {
-        // on ne sait jamais quand le destructeur est appelé
-
+        // on ne sait jamais quand le destructeur sera appelé
+        // peu pratique 
     }
 
     // Dispose() permet de libérer l'espace mémoire utilisé par mon instance 
