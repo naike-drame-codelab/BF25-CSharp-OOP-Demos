@@ -1,5 +1,4 @@
 ﻿// fonctions exécutées selon l'ordre d'insertion
-using System.Net.NetworkInformation;
 
 // initialisation
 TypeDeFonction maVariable = DireBye;
