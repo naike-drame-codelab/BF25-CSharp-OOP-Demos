@@ -19,9 +19,12 @@ maVariable -= DireBonjour;
 maVariable?.Invoke();
 
 List<int> list = [1,2,3,4,5,6,42,47,99];
-List<int> r1 =Filter(list, EstPair);
-List<int> r2= Filter(list, nb => nb % 3 == 0);
+List<int> r1 = Filter(list, EstPair);
+List<int> r2 = Filter(list, nb => nb % 3 == 0);
+// List<int> result = Filter(l, delegate (int nb) { return nb % 3 == 0; });
 
+List<string> list2 = ["papa", "maman", "Khun", "piu"];
+List<string> result = Filter<string>(list2, item => item.StartsWith("p"));
 
 // équivalent du Where dans LINQ
 List<int> r3= list.Where( nb => nb % 3 == 0).ToList();
@@ -46,7 +49,7 @@ int Somme (int nb1, int nb2)
     return nb1 + nb2;
 }
 
-#region Replacés par notre Filtrer()
+#region Replacés par notre Filter()
 /* 
  List<int> FilterPairs(List<int> entree)
 {
